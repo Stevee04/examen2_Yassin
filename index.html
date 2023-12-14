@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo smbf.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="categories.html">Category</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="#">Search</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="slider">
+      <div class="slide">
+        <img src="img/satoru-gojo-red-reversal-jujutsu-kaisen_3840x2160_xtrafondos.com.jpg" alt="Slide 1">
+        <div class="hero-content">
+          <h1>Welcome to our MEME website!</h1>
+          <p>We are a company that provides MEMES</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/sukuna-de-jujutsu-kaisen_2560x1440_xtrafondos.com.jpg" alt="Slide 2">
+        <div class="hero-content">
+          <h1>Welcome to our MEME website!</h1>
+          <p>We are a company that provides MEMES</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/fondo de pantall.jpg 3.jpg" alt="Slide 3">
+        <div class="hero-content">
+          <h1>Welcome to our MEME website!</h1>
+          <p>We are a company that provides MEMES</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/fondo de pantall.jpg 4.jpg" alt="Slide 3">
+        <div class="hero-content">
+          <h1>Welcome to our MEME website!</h1>
+          <p>We are a company that provides MEMES</p>
+        </div>
+      </div>
+    </div>      
+
+    <section>
+      <div class="row">
+        <div class="col-4">
+          <img src="img/josee.png" alt="Image 1">
+          <h2>Image 1</h2>
+          <p>Personaje meme 1.</p>
+        </div>
+        <div class="col-4">
+          <img src="img/unknown4.png" alt="Image 2">
+          <h2>Image 2</h2>
+          <p>Personaje meme 2.</p>
+        </div>
+        <div class="col-6">
+          <img src="img/unknown3.png" alt="Image 3">
+          <h2>Image 3</h2>
+          <p>Personaje meme 3.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="centrar">
+    <h2>About Us</h2>
+    <p>We are a company that provides...</p>
+    <p>We have been in business for...</p>
+    <p>We are located in...</p>
+    <p>Copyright 2023 Our Company</p>
+  </footer>
+</body>
+
+<script>
+   $(document).ready(function(){
+    // Inicializa el slider con las opciones deseadas
+    $('.slider').slick({
+      slidesToShow: 1, // Número de slides que se mostrarán a la vez
+      slidesToScroll: 1, // Número de slides que se desplazarán al avanzar/retroceder
+      arrows: false, // Desactiva las flechas de navegación
+      dots: false, // Desactiva los puntos de navegación
+      appendArrows: $('.slide-buttons'), // Agrega los botones al contenedor .slide-buttons
+      prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slick-next">Next</button>'
+    });
+  });
+  </script>
+
+</html>
